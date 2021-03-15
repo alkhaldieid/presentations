@@ -1,0 +1,12 @@
+#+TITLE: Mendeley and LaTex setup
+* Mendeley 
+** Installation and Setup   
+1. Installation and creating an account
+  https://www.mendeley.com/download-desktop-new/
+2. Create a bibtex file for all
+   [[~/2021-03-15-143816_701x521_scrot.png]]
+3. 
+4. Add pdfs
+** 
+* LaTex
+** How to cite 
