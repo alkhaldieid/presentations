@@ -1,12 +1,61 @@
 #+TITLE: Mendeley and LaTex setup
+#+STARTUP: overview
+#+REVEAL_INIT_OPTIONS: width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube'
+#+OPTIONS: toc:nil
+#+REVEAL_THEME: beige
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
+#+REVEAL_PLUGINS: (markdown notes)
 * Mendeley 
 ** Installation and Setup   
 1. Installation and creating an account
   https://www.mendeley.com/download-desktop-new/
-2. Create a bibtex file for all
-   [[~/2021-03-15-143816_701x521_scrot.png]]
-3. 
-4. Add pdfs
-** 
+2. Create one bibtex file for all pdfs automatically
+   [[./media/bibtex_sync.png]]
+3. Adding pdfs
+4. export .bib file
 * LaTex
+** What is Preamble?
+Any command that must preceed the \begin{document}
+#+begin_src latex
+\documentclass{article}
+\title{LaTex Demo}
+\author{Eid Alkhaldi}
+\date{\today}
+
+
+\begin{document}
+The content of the document is here
+\end{document}
+    
+#+end_src
+
+
+*** Document class
+**** Builtin 
+1. article
+2. book
+3. letter
+4. report
+5. beamer (for presentations)
+These document classes don't need to be installed 
+**** Customized
+In order to use a custom document class do the following
+   1. Download and unpack the archive.
+   2. Copy the .cls i.e. (IEEEtran.cls) class file into the same directory as your document.
+   3. specify the document type with the \documentclass command
+***** uthesis-v12
+#+begin_src latex
+\documentclass[12pt]{uthesis-v12}
+#+end_src
+***** ieee
+#+begin_src latex
+\documentclass[9pt]{IEEEtran}
+#+end_src
+** Specify the document class
 ** How to cite 
+** How to make a table
+** How to insert a figure
+** uthesis class
+* Questions?
