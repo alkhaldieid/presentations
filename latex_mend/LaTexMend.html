@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mendeley and LaTex setup</title>
+<meta name="author" content="(Eid Alkhaldi)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/alkhaldieid/repos/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/alkhaldieid/repos/reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/alkhaldieid/repos/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Mendeley and LaTex setup</h1><h2 class="author">Eid Alkhaldi</h2><p class="date">Created: 2021-03-15 Mon 20:09</p>
+</section>
+<section>
+<section id="slide-org170c4e7">
+<h2 id="org170c4e7"><span class="section-number-2">1</span> Mendeley</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org1ddf4b7">
+<h3 id="org1ddf4b7"><span class="section-number-3">1.1</span> Installation and Setup</h3>
+<ol>
+<li>Installation and creating an account
+<a href="https://www.mendeley.com/download-desktop-new/">https://www.mendeley.com/download-desktop-new/</a></li>
+<li>Create one bibtex file for all pdfs automatically
+<img src="./media/bibtex_sync.png" alt="bibtex_sync.png" /></li>
+<li>Add pdfs</li>
+<li>export .bib file</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-org66eea0a">
+<h2 id="org66eea0a"><span class="section-number-2">2</span> LaTex</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org0b95dc8">
+<h3 id="org0b95dc8"><span class="section-number-3">2.1</span> What is Preamble?</h3>
+<p>
+Any command that must preceed the \begin{document}
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org2b4c6c8">
+<h3 id="org2b4c6c8"><span class="section-number-3">2.2</span> Specify the document class</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgba69fe6">
+<h3 id="orgba69fe6"><span class="section-number-3">2.3</span> How to cite</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgae25da8">
+<h3 id="orgae25da8"><span class="section-number-3">2.4</span> How to make a table</h3>
+</section>
+</section>
+<section>
+<section id="slide-org0c879b5">
+<h3 id="org0c879b5"><span class="section-number-3">2.5</span> How to insert a figure</h3>
+</section>
+</section>
+<section>
+<section id="slide-org0116015">
+<h3 id="org0116015"><span class="section-number-3">2.6</span> uthesis class</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgc47ac24">
+<h2 id="orgc47ac24"><span class="section-number-2">3</span> Questions?</h2>
+</section>
+</section>
+</div>
+</div>
+<p> Created by yjwen. </p>
+<script src="file:///home/alkhaldieid/repos/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/alkhaldieid/repos/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/alkhaldieid/repos/reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown,RevealNotes],
+width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+});
+
+
+</script>
+</body>
+</html>
