@@ -1,12 +1,6 @@
 #+TITLE: Mendeley and LaTex setup
 #+STARTUP: overview
-#+REVEAL_INIT_OPTIONS: width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube'
-#+OPTIONS: toc:nil
-#+REVEAL_THEME: beige
-#+REVEAL_HLEVEL: 2
-#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
-#+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
-#+REVEAL_PLUGINS: (markdown notes)
+
 * Mendeley 
 ** Why mendeley?
 1. manages references easily
@@ -98,17 +92,14 @@ In order to use a custom document class do the following
 [[./latex_mend/examples/ieee.tex]]
 ** How to insert a figure
 *** Import the package
-#+begin_src latex
+#+begin_src latex :tangle nil
 \usepackage{graphicx}
 #+end_src
-
 *** How to make label 
 #+begin_src latex
-  
 \label{sec:first_sec}
 #+end_src
-
-
 ** How to make a table
+[[./latex_mend/examples/tables.tex]]
 * Putting it together with the uthesis class
 * Questions?
