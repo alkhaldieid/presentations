@@ -56,6 +56,57 @@ In order to use a custom document class do the following
 #+begin_src latex
 \documentclass[9pt]{IEEEtran}
 #+end_src
+** How to cite 
+*** APA citation format 
+[[./latex_mend/examples/bib.tex]]
+*** IEEE citation format
+[[./latex_mend/examples/ieee.tex]]
+** How to insert a figure
+*** Import the package 
+#+begin_src latex :tangle nil
+\usepackage{graphicx}
+#+end_src
+*** Include the media path 
+- The images that are intended to be inserted in the PDF as a figure must be either on the same folder as the tex file or in a path that is included with the \graphicspath{/path/to/the/media/folder/}
+- The path can be relative or an absolute path
+#+begin_src latex
+% Relative path (subdirectory)
+\graphicspath{ {./images/} }
+#+end_src
+ 
+
+*** Include the image with the includegraphics command
+#+begin_src latex
+\includegraphics{universe}
+#+end_src
+** How to make a table
+[[./latex_mend/examples/tables.tex]]
+** How to make label 
+#+begin_src latex
+\label{sec:first_sec}
+#+end_src
+** How to refer to a label 
+#+begin_src latex
+\ref{sec:first_sec}
+#+end_src
+** How to write an equation
+#+begin_src latex
+The mass-energy equivalence is described by the famous equation
+
+\[E=mc^2\]
+
+discovered in 1905 by Albert Einstein. 
+In natural units ($c$ = 1), the formula expresses the identity
+
+\begin{equation}
+E=m
+\end{equation}
+  
+#+end_src
+for more info refer to this website
+https://www.overleaf.com/learn/latex/mathematical_expressions
+
+* Putting it together with the uthesis class
 ** Setting up the uthesis document 
 [[./latex_mend/dissertation.tex]]
 *** Uthesis Preamble
@@ -85,21 +136,4 @@ In order to use a custom document class do the following
   
 #+end_src
 
-** How to cite 
-*** APA citation format 
-[[./latex_mend/examples/bib.tex]]
-*** IEEE citation format
-[[./latex_mend/examples/ieee.tex]]
-** How to insert a figure
-*** Import the package
-#+begin_src latex :tangle nil
-\usepackage{graphicx}
-#+end_src
-*** How to make label 
-#+begin_src latex
-\label{sec:first_sec}
-#+end_src
-** How to make a table
-[[./latex_mend/examples/tables.tex]]
-* Putting it together with the uthesis class
 * Questions?
