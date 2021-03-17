@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{lipsum}
+
+\title{APA Citation Format}
+\author{Theman Dlegend}
+\usepackage[
+backend=biber,
+style=numeric,
+]{biblatex}
+
+\addbibresource{sample.bib} %Imports bibliography file
+
+\begin{document}
+
+\maketitle
+\section{First section}
+
+Items that are cited: \textit{The \LaTeX\ Companion} book \cite{latexcompanion}, The Einstein's journal paper \cite{einstein} and the Dirac's book \cite{dirac} are physics related items. Next, a citation about \textit{The \LaTeX\ Companion} book \cite{latexcompanion}.
+
+\medskip
+
+\printbibliography
+\end{document}

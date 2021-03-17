@@ -1,1 +1,114 @@
-/home/alkhaldieid/repos/presentations/latex_mend/LaTexMend.org
+#+TITLE: Mendeley and LaTex setup
+#+STARTUP: overview
+#+REVEAL_INIT_OPTIONS: width:1200, height:800, margin: 0.1, minScale:0.2, maxScale:2.5, transition:'cube'
+#+OPTIONS: toc:nil
+#+REVEAL_THEME: beige
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by yjwen. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+* Mendeley 
+** Why mendeley?
+1. manages references easily
+2. generate a global bibtex file
+*** What is a .bib file? 
+[[./latex_mend/library.bib]]
+** Installation and Setup   
+1. Installation and creating an account
+  https://www.mendeley.com/download-desktop-new/
+2. Create one bibtex file for all pdfs automatically
+   [[./latex_mend/media/bibtex_sync.png]]
+3. Adding pdfs
+4. export .bib file
+* LaTex
+** why LaTex?
+Automate the boring stuff
+*** citations example
+*** \listoftables \listoffigures example
+** What is Preamble?
+Any command that must preceed the \begin{document}
+#+begin_src latex
+\documentclass{article}
+\title{LaTex Demo}
+\author{Eid Alkhaldi}
+\date{\today}
+
+
+\begin{document}
+The content of the document is here
+\end{document}
+    
+#+end_src
+
+*** Document class
+**** Builtin 
+1. article
+2. book
+3. letter
+4. report
+5. beamer (for presentations)
+These document classes don't need to be installed 
+**** Customized
+In order to use a custom document class do the following
+   1. Download and unpack the archive.
+   2. Copy the .cls i.e. (IEEEtran.cls) class file into the same directory as your document.
+   3. specify the document type with the \documentclass command
+**** Specify the document class
+***** uthesis-v12
+#+begin_src latex
+\documentclass[12pt]{uthesis-v12}
+#+end_src
+***** ieee
+#+begin_src latex
+\documentclass[9pt]{IEEEtran}
+#+end_src
+** Setting up the uthesis document 
+[[./latex_mend/dissertation.tex]]
+*** Uthesis Preamble
+#+begin_src latex
+\documentclass[12pt]{uthesis-v12}
+%%%% Packages go here %%%%
+
+\begin{document} 
+\title{Dissertation Title Here}
+
+\author{Elmer J.~Fudd}
+\copyrightpage{yes}
+\mydocument{Dissertation}
+\degree{Masters of Arts}{Economics}
+\conferraldate{May}{2012}
+\advisor{Dr.~Roy Hinkley}
+\secondmember{Dr.~Anita Bath}
+\thirdmember{Dr.~Chris P.~Bacon}
+\fourthmember{Dr.~Adam Baum}
+\fifthmember{Dr.~Corey O.~Graff}
+\sixthmember{Dr.~Hugh Jass}
+\seventhmember{Dr.~Noah Lott}
+\eighthmember{Dr.~Jean Poole}
+\graduatedean{Dr.~Patricia R.~Komuniecki}{Dean}
+
+\maketitle  
+  
+#+end_src
+
+** How to cite 
+*** APA citation format 
+[[./latex_mend/examples/bib.tex]]
+*** IEEE citation format
+[[./latex_mend/examples/ieee.tex]]
+** How to insert a figure
+*** Import the package
+#+begin_src latex
+\usepackage{graphicx}
+#+end_src
+
+*** How to make label 
+#+begin_src latex
+  
+\label{sec:first_sec}
+#+end_src
+
+
+** How to make a table
+* Putting it together with the uthesis class
+* Questions?
