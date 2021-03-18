@@ -18,7 +18,11 @@
 ** why LaTex?
 Automate the boring stuff
 *** citations example
-*** \listoftables \listoffigures example
+*** \listoftables
+[[./latex_mend/examples/tables.tex]]
+*** \listoffigures example
+[[./latex_mend/examples/labeling.tex]]
+
 ** What is Preamble?
 Any command that must preceed the \begin{document}
 #+begin_src latex
@@ -62,6 +66,8 @@ In order to use a custom document class do the following
 *** IEEE citation format
 [[./latex_mend/examples/ieee.tex]]
 ** How to insert a figure
+example 1 [[./latex_mend/examples/labeling.tex]]
+example 2 [[./latex_mend/dissertation.tex]]
 *** Import the package 
 #+begin_src latex :tangle nil
 \usepackage{graphicx}
